@@ -8,11 +8,12 @@ using namespace std;
 
 class Button{
 public:
-	virtual void setIsClicked(bool bl);
+	virtual void setIsClicked(bool bl){}
 };
 
 class UpButton : public Button{
 public:
+	UpButton(){}
 	virtual void setIsClicked(bool bl){
 		this->isClicked = bl;
 	}
@@ -22,6 +23,7 @@ private:
 
 class DownButton : public Button{
 public:
+	DownButton(){}
 	virtual void setIsClicked(bool bl){
 		this->isClicked = bl;
 	}
